@@ -6,11 +6,13 @@ import Profil from "./pages/Profil";
 import Galleri from "./pages/Galleri";
 import Pendaftaran from "./pages/Pendaftaran";
 import Info from "./pages/Info";
+import ScrollToTop from "./ScrollToTop";
 
 export default function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HalUtama />} />
           <Route path="/profil" element={<Profil />} />
